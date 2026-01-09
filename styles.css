@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 460px;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* Header */
+header {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.controls select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  background: #fff;
+}
+
+/* Table wrapper */
+.table-wrapper {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  font-size: 12px;
+}
+
+thead th {
+  padding: 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #444;
+}
+
+tbody tr {
+  background: #fafafa;
+  transition: background 0.15s ease;
+}
+
+tbody tr:hover {
+  background: #f1f5f9;
+}
+
+td {
+  padding: 10px 8px;
+  vertical-align: top;
+}
+
+/* Product name */
+.name a {
+  font-weight: 600;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.name a:hover {
+  text-decoration: underline;
+}
+
+.pack {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+/* Prices */
+.muted {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.discount {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.rating {
+  font-weight: 600;
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Zepto Loot Deals by invader",
+  "version": "1.0",
+  "description": "Shows Zepto search & brand products in a table with price and discount.",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["https://www.zepto.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zepto.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-hook.js"],
+      "matches": ["https://www.zepto.com/*"]
+    }
+  ]
+}
